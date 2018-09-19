@@ -13,4 +13,9 @@ class TaskA implements TaskInterface
         sleep(3);
         return "Task A";
     }
+
+    protected function cantTouchThis()
+    {
+        echo 'Hello! I\'m a protected method.';
+    }
 }
